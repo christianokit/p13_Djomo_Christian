@@ -1,0 +1,1 @@
+Gestione Spesa Multinegozio
