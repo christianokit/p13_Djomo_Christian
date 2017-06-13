@@ -27,6 +27,11 @@ public class TestFunzCarrelloAggiungiProd {
 		this.expect = expect;
 	}
 	
+	@Before	//Eseguo prima di OGNI test
+	public void init() {
+		c = new Carrello(); 
+	}
+
 	@Parameters
 	public static Collection<Object[]> data() {
 		Utente u = new Utente(1, "mail", "pw", "nome", 
@@ -39,11 +44,6 @@ public class TestFunzCarrelloAggiungiProd {
 				{u, null, 3, 0},
 				{u, p, -3, 0}
 		});
-	}
-	
-	@Before	//Eseguo prima di OGNI test
-	public void init() {
-		c = new Carrello(); 
 	}
 	
 	@Test

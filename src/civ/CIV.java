@@ -96,7 +96,7 @@ public class CIV {
     	//Cerco prodotti
     	Prodotto prodSelect = null;
     	for(Prodotto p : prodotti) {
-    		if (p.getNome().contains(query)){	//Se nel nome è presente query
+    		if (p.getNome().contains(query)){	//Se nel nome e' presente query
     			list.add(p);	//aggiungo prodotto alla lista
     		}
 	    }

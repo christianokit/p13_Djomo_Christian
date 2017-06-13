@@ -38,7 +38,7 @@ public class Prodotto {
      * Permette all'Utente di scrivere una Recensione su un Prodotto
      */
     public boolean scriviRecensione(Utente u, int voto, String messaggio) {
-    	if(u == null) {	//Se l'utente non è autenticato
+    	if(u == null) {	//Se l'utente non e' autenticato
 			return false;
 		} 
     	

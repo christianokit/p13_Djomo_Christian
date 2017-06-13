@@ -22,11 +22,11 @@ public class Carrello extends Acquisto {
 			return;
 		}
     	
-    	if(num <= 0 || p == null) {	//Se num non è valido
+    	if(num <= 0 || p == null) {	//Se num non e' valido
     		return;
     	}
     	
-        Quantità q = new Quantità(num, p);
+        Quantita q = new Quantita(num, p);
         listaProdotti.add(q);
     }
     
@@ -39,12 +39,12 @@ public class Carrello extends Acquisto {
      * @param p Prodotto da eliminare
      */
     public boolean cancellaProdotto (Utente u, Prodotto p) {
-    	if(u == null) {	//Se l'utente non è autenticato
+    	if(u == null) {	//Se l'utente non e' autenticato
 			System.out.println("Utente non autenticato");
 			return false;
 		}
     	
-    	for(Quantità q : listaProdotti) {
+    	for(Quantita q : listaProdotti) {
     		if(q.getProdotto().equals(p)) {
     			listaProdotti.remove(q);
     			return true;

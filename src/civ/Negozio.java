@@ -46,7 +46,7 @@ public class Negozio {
      * Permette a un Utente di scrivere una Recensione sul Negozio
      */
     public boolean scriviRecensione(Utente u, int voto, String messaggio) {
-    	if(u == null) {	//Se l'utente non è autenticato
+    	if(u == null) {	//Se l'utente non e' autenticato
 			return false;
 		}
     	    	
@@ -63,12 +63,12 @@ public class Negozio {
      * @return il prodotto cercato
      */
     public Prodotto ricercaProdotto(Utente u, String nomeProd) {
-    	if(u == null || !u.getClass().equals(ManagerNegozio.class)) {	//Se l'utente è un ManagerNegozio
+    	if(u == null || !u.getClass().equals(ManagerNegozio.class)) {	//Se l'utente e' un ManagerNegozio
 			System.out.println("Utente non autenticato");
 			return null;
 		}
     	
-    	if(!((ManagerNegozio)u).getNegozioGestito().equals(this)) {	//Se u non è il Manager di questo Negozio
+    	if(!((ManagerNegozio)u).getNegozioGestito().equals(this)) {	//Se u non e' il Manager di questo Negozio
     		System.out.println("Utente non autenticato");
 			return null;
     	}    	
@@ -85,12 +85,12 @@ public class Negozio {
     
     
     public void registraProdotto(Utente u, Prodotto p, CIV civ) {
-    	if(u == null || !u.getClass().equals(ManagerNegozio.class)) {	//Se l'utente è un ManagerNegozio
+    	if(u == null || !u.getClass().equals(ManagerNegozio.class)) {	//Se l'utente e' un ManagerNegozio
 			System.out.println("Utente non autenticato");
 			return;
 		}
     	
-    	if(!((ManagerNegozio)u).getNegozioGestito().equals(this)) {	//Se u non è il Manager di questo Negozio
+    	if(!((ManagerNegozio)u).getNegozioGestito().equals(this)) {	//Se u non e' il Manager di questo Negozio
     		System.out.println("Utente non autenticato");
 			return;
     	}

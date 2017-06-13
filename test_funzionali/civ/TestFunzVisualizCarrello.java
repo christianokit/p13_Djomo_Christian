@@ -31,14 +31,14 @@ public class TestFunzVisualizCarrello {
 	public void testProd() {
 		civ.getCurrentUser().getCarrello().aggiungiProdotto(u, p1, 3);
 		
-		List<Quantità> list = civ.getCurrentUser().getCarrello().getListaProdotti();
+		List<Quantita> list = civ.getCurrentUser().getCarrello().getListaProdotti();
 		
 		assertTrue(list.size() != 0);
 	}
 	
 	@Test
 	public void testNoProd() {
-		List<Quantità> list = civ.getCurrentUser().getCarrello().getListaProdotti();
+		List<Quantita> list = civ.getCurrentUser().getCarrello().getListaProdotti();
 		
 		assertEquals(0, list.size());
 	}

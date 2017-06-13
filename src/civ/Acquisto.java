@@ -11,7 +11,7 @@ public class Acquisto {
     /** Associations */
     private Recensione recensione;
     private List<Negozio> negozi;
-    protected List<Quantità> listaProdotti;
+    protected List<Quantita> listaProdotti;
     
     public Acquisto() {
     	negozi = new ArrayList<>();
@@ -48,7 +48,7 @@ public class Acquisto {
      * Implementa UC5
      * @return lista dei prodotti
      */
-    public List<Quantità> getListaProdotti() {
+    public List<Quantita> getListaProdotti() {
     	return listaProdotti;
 	}
     

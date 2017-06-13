@@ -81,7 +81,7 @@ public class ManagerNegozio extends Utente {
      * 	da un Negozio
      * Implementa UC17
      * @param prodSelect Prodotto da eliminare
-     * @return true se il Prodotto è stato eliminato, false altrimenti
+     * @return true se il Prodotto e' stato eliminato, false altrimenti
      */
     public boolean eliminaProdotto(Prodotto prodSelect) {   	
     	if(negozioGestito.getProdotti().remove(prodSelect)) {

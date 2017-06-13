@@ -20,34 +20,7 @@ public class TestFunzCancCarrello {
 				"cognome", "indirizzo");
 		p = new Prodotto(1, "Prodotto", (float)3.5);
 	}
-//	
-//	@Test
-//	public void testAggiungiProdotto() {
-//		int oldSize = c.getListaProdotti().size();
-//		
-//		c.aggiungiProdotto(u, p, 3);
-//		
-//		assertEquals(oldSize+1, c.getListaProdotti().size());
-//	}
-//
-//	@Test
-//	public void testAggiungiProdottoNull() {
-//		int oldSize = c.getListaProdotti().size();
-//		
-//		c.aggiungiProdotto(u, null, 3);
-//		
-//		assertEquals(oldSize, c.getListaProdotti().size());
-//	}
-//	
-//	@Test
-//	public void testAggiungiProdottoNeg() {
-//		int oldSize = c.getListaProdotti().size();
-//		
-//		c.aggiungiProdotto(u, p, -3);
-//		
-//		assertEquals(oldSize, c.getListaProdotti().size());
-//	}
-//	
+
 	@Test
 	public void testCancellaProdotto() {
 		c.aggiungiProdotto(u, p, 3);

@@ -12,11 +12,11 @@ import org.junit.runners.Suite;
 	TestStrutManagerNegozio.class,
 	TestStrutProdotto.class,
 	TestStrutNegozio.class,
-	TestStrutQuantità.class
+	TestStrutQuantita.class
 })
 
 /**
- * La test suite non raggiunge il 100% di copertura perché
+ * La test suite non raggiunge il 100% di copertura perche'
  * non sono stati testati diversi metodi setter e getter,
  * alcuni metodi sono di use case che non sono stati implementati,
  * e alcuni metodi gestiscono l'interfaccia grafica col sistema.
