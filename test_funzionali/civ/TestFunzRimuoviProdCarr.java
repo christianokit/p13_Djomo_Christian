@@ -41,5 +41,12 @@ public class TestFunzRimuoviProdCarr {
 		assertEquals(false, response);
 	}
 
-
+	@Test
+	public void testNoUser() {
+		boolean response = civ.getCurrentUser().getCarrello().cancellaProdotto(null, p1);
+		
+		assertEquals(false, response);
+	}
+	
+	
 }

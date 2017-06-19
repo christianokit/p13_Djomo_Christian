@@ -6,12 +6,13 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-	TestStrutCIV.class,
+	TestFunzAutenticazione.class,
+	TestFunzRecensione.class,
 	TestFunzCancCarrello.class,
 	TestFunzCarrelloAggiungiProd.class,
 	TestFunzCercaProd.class,
+	TestFunzEliminaProdManger.class,
 	TestFunzModificaProd.class,
-	TestStrutProdotto.class,
 	TestFunzRegNegozio.class,
 	TestFunzRimuoviProdCarr.class,
 	TestFunzVisualizCarrello.class
@@ -20,7 +21,7 @@ import org.junit.runners.Suite;
 public class TestFunzionali { }
 
 /**
- * La Test suite ha una statement coverage del 59,6%
- * e una branch coverage del 66,7%
+ * La Test suite ha una statement coverage del 53,2%
+ * e una branch coverage del 62,9%
  * 
  */

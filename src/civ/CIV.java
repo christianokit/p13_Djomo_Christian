@@ -30,7 +30,7 @@ public class CIV {
 		civ.getUtenti().add(new Utente(1, "mail", "pw", "nome", "cognome", "indirizzo"));
 		//Fine setup
 		
-		List<Prodotto> list = civ.cercaProdotto("Biscotti");
+		List<Prodotto> list = civ.cercaProdotto("Biscotti"); // tutta la lista dei prodotti biscotti del Civ
 		for(Prodotto p: list) {
 			System.out.println(p);
 		}

@@ -34,6 +34,7 @@ public class TestFunzModificaProd {
 	public static Collection<Object[]> data() {
 		return Arrays.asList(new Object[][]{
 				{"Biscotti Mulino Bianco", (float)4.5, (float)4.5},
+				{"Biscotti Mulino Bianco", (float)-4.5, (float)3.5},
 				{"Biscotti", (float)4.5, null},
 		});
 	}
