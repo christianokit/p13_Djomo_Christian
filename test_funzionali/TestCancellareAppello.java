@@ -28,8 +28,6 @@ public class TestCancellareAppello {
 	public void testOk() {
 		Appello a = i.getListAppelli().get(0);
 		
-		a.getListStudenti().add(st);
-		
 		boolean res = i.cancellaAppello(a);
 		
 		assertTrue(res);
@@ -38,7 +36,6 @@ public class TestCancellareAppello {
 	
 	@Test
 	public void testNo() {
-		Appello a = i.getListAppelli().get(0);
 		Appello a1 = i2.getListAppelli().get(0);
 		
 		boolean res1 = i.cancellaAppello(a1);

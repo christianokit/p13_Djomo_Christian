@@ -42,7 +42,7 @@ public class Insegnamento {
     					
     					//Se non è lo stesso insegnamento
     					//O, se è lo stesso insegnamento, è anche lo stesso tipo
-    					if( (!this.equals(i)) | (this.equals(i) && tipo.equals(a.getTipo())) ) {
+    					if( (!this.equals(i)) || (this.equals(i) && tipo.equals(a.getTipo())) ) {
     						return false;
     					}
     				}

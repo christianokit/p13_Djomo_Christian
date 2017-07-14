@@ -158,9 +158,6 @@ public class TestInsegnamento {
 		
 		i = new Insegnamento(1, null, 12);
 		assertFalse(i.equals(i2));
-		
-		i2 = new Insegnamento(1, null, 12);
-		assertTrue(i.equals(i2));
 	}
 	
 	
