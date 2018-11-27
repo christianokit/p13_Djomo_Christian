@@ -28,6 +28,7 @@ public class TestCancellareAppello {
 	public void testOk() {
 		Appello a = i.getListAppelli().get(0);
 		
+		
 		boolean res = i.cancellaAppello(a);
 		
 		assertTrue(res);

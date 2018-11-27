@@ -14,6 +14,7 @@ public class TestStudente {
 	Insegnamento i3;
 	PianoStudi ps;
 	Docente d;
+	Appello a;
 	
 	@Before
 	public void setup() {
@@ -47,6 +48,8 @@ public class TestStudente {
 		
 		ps = new PianoStudi(ins2, NomeAnno.L1);
 		st.getListPianoStudi().add(ps);
+		st.getListAppelli().add(a);
+		
 		
 	}
 	

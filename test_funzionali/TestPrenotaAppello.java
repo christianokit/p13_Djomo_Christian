@@ -20,6 +20,8 @@ public class TestPrenotaAppello {
 		 i2 = new Insegnamento(2, "Ins2", 12);
 		 i.creaAppello(new Data(7, 7, 2017, 9, 0), 
 					new Data(7, 7, 2017, 11, 0), "E0", "orale", d, s);
+		 i.creaAppello(new Data(7, 7, 2017, 9, 0), 
+					new Data(7, 7, 2017, 11, 0), "E1", "scritto", d, s);
 		 i2.creaAppello(new Data(7, 7, 2017, 9, 0), 
 					new Data(7, 7, 2017, 11, 0), "E1", "orale", d, s);
 		 ArrayList<Insegnamento> ins = new ArrayList<Insegnamento>();
@@ -33,7 +35,6 @@ public class TestPrenotaAppello {
 	public void testOk() {
 		Insegnamento ins = ps.getListInsegnamenti().get(0);
 		Appello app = ins.getListAppelli().get(0);
-		
 		
 		boolean res = st.prenotaAppello(app);
 		

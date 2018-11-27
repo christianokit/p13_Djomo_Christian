@@ -158,7 +158,13 @@ public class TestInsegnamento {
 		
 		i = new Insegnamento(1, null, 12);
 		assertFalse(i.equals(i2));
-	}
+		
+	
+		
+		
+		
+		
+		}
 	
 	
 

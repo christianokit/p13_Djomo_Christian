@@ -9,6 +9,8 @@ public class TestAnno {
 
 	Anno a;
 	
+		
+	
 	@Before
 	public void setUp() {
 		Insegnamento i = new Insegnamento(1, "ins1", 12);
@@ -18,6 +20,10 @@ public class TestAnno {
 		ins.add(i2);
 		
 		a = new Anno(NomeAnno.L1, 12, ins);
+		
+		NomeAnno a1 = a.getAnno();
+		int crediti = a.getCreditiRichiesti();
+
 	}
 	
 	@Test

@@ -9,6 +9,7 @@ public class TestModificaAppello {
 
 	Sistema s;
 	Insegnamento i;
+	Insegnamento i2;
 	Docente d;
 	
 	@Before
@@ -18,6 +19,9 @@ public class TestModificaAppello {
 		i = new Insegnamento(1, "Ins1", 12);
 		i.creaAppello(new Data(7, 7, 2017, 9, 0), 
 				new Data(7, 7, 2017, 11, 0), "E0", "orale", d, s);
+		i2 = new Insegnamento(2, "Ins2", 6);
+		i2.creaAppello(new Data(7, 7, 2017, 9, 0), 
+				new Data(7, 7, 2017, 11, 0), "E1", "scritto", d, s);
 	}
 
 	
@@ -40,6 +44,15 @@ public class TestModificaAppello {
 					a.getDataInizio(), "E2", "scritto", d, s);
 		
 		assertFalse(res);
+		Appello a1 = i2.getListAppelli().get(0);
+		
+		boolean res1 = i.modificaAppello(a1, a1.getDataInizio(),
+					a.getDataFine(), "E2", "scritto", d, s);
+		
+		assertFalse(res1);
+		
+		
+		
 	}
 	
 }

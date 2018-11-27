@@ -11,6 +11,7 @@ public class TestCompilaPianoStudi {
 	Studente st;
 	Insegnamento i;
 	Insegnamento i2;
+	Insegnamento i3;
 	
 	@Before
 	public void setup() {
@@ -19,6 +20,7 @@ public class TestCompilaPianoStudi {
 		
 		i = new Insegnamento(1, "ins1", 12);
 		i2 = new Insegnamento(2, "ins2", 6);
+		i3 = new Insegnamento(3, "ins3", 6);
 		ArrayList<Insegnamento> ins = new ArrayList<>();
 		ins.add(i);
 		ins.add(i2);
@@ -50,6 +52,13 @@ public class TestCompilaPianoStudi {
 		boolean res = st.compilaPiano(insList, NomeAnno.L1);
 		
 		assertFalse(res);
+		
+		ArrayList<Insegnamento> insList1 = new ArrayList<>();
+		insList1.add(i3);
+		
+		boolean res1 = st.compilaPiano(insList1, NomeAnno.L1);
+		
+		assertFalse(res1);
 	}
 
 }
